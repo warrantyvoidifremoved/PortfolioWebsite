@@ -1,0 +1,88 @@
+/* Content Styles */
+#information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 2.5rem; /* 40px */
+}
+
+#site {
+    font-size: 2rem; /* 32px */
+    font-weight: bold;
+}
+
+#linksContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    padding: 3.125rem 0; /* 50px 0 */
+    max-width: 95%;
+    box-sizing: border-box;
+    gap: 2rem; /* 32px */
+}
+
+.links {
+    display: flex;
+    position: relative;
+    min-height: 50rem; /* 800px */
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0.625rem 0.625rem 1.25rem rgba(0, 0, 0, 0.3); /* 10px 10px 20px */
+    border: solid black 0.125rem; /* 2px */
+    border-radius: 0.5rem; /* 8px */
+    transition: border 0.3s ease-in-out;
+}
+
+.links::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem; /* 8px */
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 0.5rem; /* 8px */
+    color: white;
+    font-size: 2rem; /* 32px */
+    transition: font-size 0.3s ease-in-out;
+}
+
+.links:hover {
+    border: solid white 0.1875rem; /* 3px */
+}
+
+.links:hover .headings{
+    font-size: 2.125rem; /* 36px */
+}
+
+/*
+#project {
+    background-image: url('');
+}
+
+#project {
+    background-image: url('');
+}
+
+#project {
+    background-image: url('');
+}
+*/
